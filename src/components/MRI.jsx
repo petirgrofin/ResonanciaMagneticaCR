@@ -15,7 +15,7 @@ const Service = ({img_src, title, text}) => (
 
 const MRI = () => (
     
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center gap-4">
 
         <div className="flex flex-col gap-4">
             <p className="text-[#527bec] font-bold font-poppins text-[1.2em] uppercase text-center">Nuestros servicios</p>
@@ -28,7 +28,7 @@ const MRI = () => (
             <Service img_src={Torax} title={"Tórax"}></Service>
         </div>
 
-        <button className={`mt-12 ${AltCTAStyle} w-[150px]`}>Ver todos</button>
+        <button className={`mt-6 ${AltCTAStyle} w-[150px]`}>Ver todos</button>
 
     </div>
 

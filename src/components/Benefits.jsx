@@ -13,19 +13,19 @@ const Benefits = () => (
             <p className='font-poppins text-black text-[1.2em] leading-[1.8em] w-[78%] text-justify'>La resonancia magnética posee varias ventajas sobre otros métodos de diagnóstico.</p>
             <ul className='list-inside list-image-[url(src/assets/checkmark.svg)] space-y-2'>
                 <li className='font-poppins text-[1.1em] w-[80%]'>
-                    No utiliza radiación ionizante
+                    <b>No utiliza radiación</b> ionizante
                 </li>
                 <li className='font-poppins text-[1.1em] w-[80%]'>
-                    No causa dolor ni molestia alguna
+                    <b>No causa dolor ni molestia</b> alguna
                 </li>
                 <li className='font-poppins text-[1.1em] w-[80%]'>
-                    El paciente mantiene una comunicación constante con el personal
+                    El paciente mantiene una <b>comunicación constante con el personal</b>
                 </li>
                 <li className='font-poppins text-[1.1em] w-[80%]'>
-                    Al finalizar el estudio, el paciente puede reanudar sus actividades habituales
+                    Al finalizar el estudio, <b>el paciente puede reanudar sus actividades habituales</b>
                 </li>
             </ul>
-            <button className={`${AltCTAStyle} self-start`}>Aprenda más</button>
+            <button className={`${AltCTAStyle} self-start mt-4`}>Aprenda más</button>
         </div>
     </div>
 )

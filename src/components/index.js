@@ -1,4 +1,4 @@
-import Hero from "../assets/Hero";
+import Hero from "./Hero";
 import Navbar from "./Navbar";
 import MRI from "./MRI";
 import Separator from "./Separator";

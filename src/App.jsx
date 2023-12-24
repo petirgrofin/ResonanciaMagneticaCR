@@ -6,7 +6,7 @@ const handleScroll = (event) => {
 
     if (event.currentTarget.scrollY > 300){
         document.getElementById("navbar").className = document.getElementById("navbar").className.replace("absolute", "fixed")
-        document.getElementById("navbar").classList.add("bg-[#f2f2f0]")
+        document.getElementById("navbar").classList.add("bg-[#f8f8f8]")
         document.getElementById("navbar").classList.add("transition-all")
         let links = Array.from(document.getElementsByClassName("navbar-links"))
         for (let i = 0; i < links.length; i++){
@@ -17,7 +17,7 @@ const handleScroll = (event) => {
     }
     else{
         document.getElementById("navbar").className = document.getElementById("navbar").className.replace("fixed", "absolute")
-        document.getElementById("navbar").classList.remove("bg-[#f2f2f0]")
+        document.getElementById("navbar").classList.remove("bg-[#f8f8f8]")
         document.getElementById("navbar").classList.remove("transition-all")
         let links = Array.from(document.getElementsByClassName("navbar-links"))
         for (let i = 0; i < links.length; i++){
@@ -32,7 +32,7 @@ window.addEventListener("scroll", handleScroll)
 
 const App = () => (
 
-    <div className='w-full bg-[#f2f2f2]'>
+    <div className='w-full bg-[#f6f6f6]'>
 
         <div className="w-full">
             <Navbar></Navbar>

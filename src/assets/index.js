@@ -27,6 +27,9 @@ import MusculoEsqueletico from "./MusculoEsqueletico.png";
 import Torax from "./Torax.png";
 import Mamas from "./Mamas.png";
 import MRIProcedure from "./MRIProcedure.png";
+import phone_icon from "./phone-icon.svg";
+import whatsapp_icon from "./whatsapp-icon.svg";
+import time_icon from "./time-icon.png";
 
 export {logo};
 export {resonancia_imagen};
@@ -57,3 +60,6 @@ export {MusculoEsqueletico};
 export {Torax};
 export {Mamas};
 export {MRIProcedure};
+export {phone_icon};
+export {whatsapp_icon};
+export {time_icon};
