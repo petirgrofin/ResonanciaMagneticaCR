@@ -4,24 +4,24 @@ import { AltCTAStyle, CTAStyle } from "../styles";
 
 const Hero = () => (
     
-    <div className="w-full xl:h-[800px] 2xl:h-[900px] bg-sky-500 bg-[url('src/assets/Resonancia.jpg')] bg-no-repeat bg-fixed bg-center bg-cover backdrop-brightness-50">
+    <div className="w-full h-[900px] bg-[url('src/assets/Resonancia.jpg')] bg-no-repeat bg-fixed bg-center bg-cover">
 
-        <div className="relative w-full h-full bg-black/[0.55] hover:bg-black/[0.4] transition-all duration-1000">
+        <div className="relative w-full h-full bg-black/[0.65] hover:bg-black/[0.5] transition-all duration-1000">
             <img src={resonancia_imagen} alt="resonador" className="brightness-[0.5] hover:brightness-[0.7] transition-all duration-1000 w-full hidden"/>
-            <div className="absolute top-[20%] left-[10%] transition-all duration-1000 w-[40%]">
-                <h1 className="text-white font-regular xl:text-[4em] 2xl:text-[6em] font-montserrat w-fit">
-                    Un resonador <br/> <span className="font-bold"> magnético</span>
+            <div className="absolute top-[20%] left-[10%] transition-all duration-1000 xl:w-[45%] 2xl:w-[45%]">
+                <h1 className="text-white font-regular text-[5em] 2xl:text-[4.3em] font-montserrat w-fit">
+                    Cuidado de calidad profesional a un <br />precio <span className="font-bold">inigualable</span>
                 </h1>
-                <p className="text-white font-light xl:text-[1.1em] 2xl:text-[1.5em] border-l-4 border-l-[#4c62c7] px-4 rounded-md mt-12 w-[90%]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda odio eos aliquam consequuntur, magni voluptatum quisquam qui perferendis harum repellendus, enim quo rem, voluptatibus quis totam sint dignissimos velit repellat.
+                <p className="text-white font-light text-[1.4em] border-l-4 border-l-[#4c62c7] px-4 rounded-md mt-12 xl:w-[100%] 2xl:w-[75%] text-justify">
+                    Con nuestra tecnología de última generación y los mejores precios de la industria, podemos otorgarle <span className="font-bold">diagnósticos precisos</span> para que pueda tomar <span className="font-bold">decisiones informadas y tempranas</span> respecto a su salud.
                 </p>
                 <div className="flex flex-row gap-8">
-                    <button className={`${AltCTAStyle} mt-12`}>
+                    <a href="#contact" className={`${AltCTAStyle} mt-12`}>
                         Agende una cita
-                    </button>
-                    <button className={`${CTAStyle} mt-12`}>
-                    Aprenda más acerca de nosotros
-                    </button>
+                    </a>
+                    <a href="#trust" className={`${CTAStyle} mt-12`}>
+                        Aprenda más acerca de nosotros
+                    </a>
                 </div>
             </div>
         </div>

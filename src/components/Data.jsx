@@ -3,18 +3,22 @@ import React from 'react'
 const DataPiece = ({number, info}) =>(
 
     <div className='flex flex-col'>
-        <p className='font-bold text-[4em] text-white text-center'>{number}</p>
-        <p className='text-white text-[2em] text-center'>{info}</p>
+        <p className='font-semibold text-[3.5em] text-transparent bg-clip-text bg-gradient-to-r from-[#5266cb] to-[#0a1482] to-[80%] text-center'>{number}</p>
+        <p className='text-[#3b3b3b] text-[20px] text-center'>{info}</p>
     </div>
 
 )
 
 const Data = () => (
-    <div className='bg-gradient-to-r from-[#0b0e29] to-[#182a79] to-80% w-full m-auto h-[350px] flex flex-row gap-24 items-center justify-center'>
-        <DataPiece number={"1995"} info={"Año de establecimiento"}></DataPiece>
-        <DataPiece number={"400 000+"} info={"Clientes satisfechos"}></DataPiece>
-        <DataPiece number={"12"} info={"Médicos profesionales"}></DataPiece>
-        <DataPiece number={"800 000+"} info={"Resonancias realizadas"}></DataPiece>
+    
+    <div className='bg-[#eff2f7] w-full m-auto p-16 pb-16 flex flex-col gap-8'>
+        <p className='font-poppins text-[1.5em] text-center font-semibold text-[#232323]'>Obtenga la asesoría profesional que necesita</p>
+        <div className='flex flex-row gap-24 items-center justify-center'>
+            <DataPiece number={"1995"} info={"Año de\nestablecimiento"}></DataPiece>
+            <DataPiece number={"400 000+"} info={"Clientes\nsatisfechos"}></DataPiece>
+            <DataPiece number={"12"} info={"Médicos\nprofesionales"}></DataPiece>
+            <DataPiece number={"800 000+"} info={"Resonancias\nrealizadas"}></DataPiece>
+        </div>
     </div>
 )
 

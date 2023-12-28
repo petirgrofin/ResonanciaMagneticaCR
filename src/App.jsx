@@ -1,34 +1,5 @@
 import React from 'react';
-import {Hero, Navbar, MRI, Contact, Footer, Trust, MRIExplanation, Data, Benefits} from "./components";
-import { SectionHR } from './styles';
-
-const handleScroll = (event) => {
-
-    if (event.currentTarget.scrollY > 300){
-        document.getElementById("navbar").className = document.getElementById("navbar").className.replace("absolute", "fixed")
-        document.getElementById("navbar").classList.add("bg-[#f8f8f8]")
-        document.getElementById("navbar").classList.add("transition-all")
-        let links = Array.from(document.getElementsByClassName("navbar-links"))
-        for (let i = 0; i < links.length; i++){
-            if (links[i].classList.contains("studies-link"))
-                continue
-            links[i].className = links[i].className.replace("text-white", "text-black")
-        }
-    }
-    else{
-        document.getElementById("navbar").className = document.getElementById("navbar").className.replace("fixed", "absolute")
-        document.getElementById("navbar").classList.remove("bg-[#f8f8f8]")
-        document.getElementById("navbar").classList.remove("transition-all")
-        let links = Array.from(document.getElementsByClassName("navbar-links"))
-        for (let i = 0; i < links.length; i++){
-            if (links[i].classList.contains("studies-link"))
-                continue
-            links[i].className = links[i].className.replace("text-black", "text-white")
-        }
-    }
-}
-
-window.addEventListener("scroll", handleScroll)
+import {Hero, Navbar, MRI, Contact, Footer, Trust, MRIExplanation, Data, Benefits, FAQ} from "./components";
 
 const App = () => (
 
@@ -42,7 +13,7 @@ const App = () => (
             <Hero></Hero>
         </section>
 
-        <section className='mt-24'>
+        <section id='trust' className='mt-24'>
             <Trust></Trust>
         </section>
 
@@ -60,12 +31,16 @@ const App = () => (
 
         {/*<div className='aspect-[960/100] w-full bg-no-repeat bg-center bg-cover bg-[url("src/assets/wave-haikei.svg")]'></div>*/}
 
-        <section className='mt-36'>
+        <section id='services' className='mt-36'>
             <MRI></MRI>
         </section>
 
-        <section className='mt-36'>
+        <section id='contact' className='mt-36'>
             <Contact></Contact>
+        </section>
+
+        <section id='faq' className='mt-36'>
+            <FAQ></FAQ>
         </section>
 
         <section className='mt-36'>
