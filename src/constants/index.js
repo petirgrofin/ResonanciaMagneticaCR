@@ -33,6 +33,6 @@ let links = [
     NavbarLink.create("Preguntas frecuentes", [], "index.html#faq"),
 ]
 
-let studies_link = "//201.192.249.18:8083"
+let studies_link = "http://201.192.249.18:8083"
 
 export {links, studies_link};

@@ -21,7 +21,7 @@ const MRI = () => (
 
         <div className="flex flex-col gap-4 items-center justify-center">
             <p className="text-[#527bec] font-bold font-poppins text-[1.2em] uppercase text-center">Nuestros servicios</p>
-            <h2 className='mb-12 text-black font-semibold font-poppins text-[3.5em]'>Todo tipo de resonancias magnéticas</h2>
+            <h2 className='mb-12 text-black font-semibold font-poppins text-[2.5em] xl:text-[3.5em]'>Todo tipo de resonancias magnéticas</h2>
         </div>
 
         <div className="flex flex-row items-center justify-center gap-12 max-w-[1600px] flex-wrap">

@@ -9,7 +9,7 @@ const AccordionElement = ({question, answer}) => {
         <div className='flex flex-row justify-center gap-4'>
             <p className='mt-4 font-poppins text-blue-600 text-[2em]'>{toggled ? "-" : "+"}</p>
             <button onClick={() => setToggle(!toggled)} className={`text-left w-[800px] p-6 border-[#d9d9d9] border-t ${toggled ? "space-y-4" : "hover:bg-[#fbfbfb]"}`}>
-                <p className='font-poppins text-[20px] text-black'>{question}</p>
+                <p className='font-poppins text-[18px] xl:text-[20px] text-black'>{question}</p>
                 <p className={`text-justify whitespace-pre-wrap font-poppins text-[#3b3b3b] text-[16px] overflow-hidden max-h-0 ${toggled ? "max-h-96 opacity-1" : "max-h-0 opacity-0"} transition-all duration-[150ms]`}>{answer}</p>
             </button>
         </div>
@@ -21,7 +21,7 @@ const FAQ = () => {
 
     return (
         <div className='flex justify-center items-center flex-col gap-8'>
-            <h2 className='font-poppins text-[3.5em] text-center font-semibold'>Preguntas frecuentes</h2>
+            <h2 className='font-poppins text-[2.5em] xl:text-[3.5em] text-center font-semibold'>Preguntas frecuentes</h2>
             <div className='flex flex-col'>
                 <AccordionElement question={"¿Cómo se realiza una resonancia magnética?"} answer={"El técnico ubica al paciente en la mesa exploratoria, dependiendo el área a explorar, y mueve la mesa de manera que el área de interés se sitúe en el centro geométrico del imán. La sala de resonancia cuenta con excelente ventilación e iluminación. \n\nDurante el examen se escuchan una serie de ruidos rítmicos debidos a bobinas de gradientes que tiene el equipo. Este ruido depende de las secuencias utilizadas. El paciente debe permanecer muy quieto, ya que es cuando las imágenes se obtienen para evitar artificios y degradación en la calidad de las mismas."}></AccordionElement>
                 <AccordionElement question={"¿Si soy claustrofóbico, puedo realizarme el estudio?"} answer={"Nuestros resonadores posibilitan mayor confort para pacientes claustrofóbicos gracias a que cuentan con túnel de mayor diámetro. Además, el tiempo dentro del resonador es menor, garantizando aún, una mejor calidad de imagen. Todas estas son ventajas pensadas especialmente para los pacientes claustrofóbicos."}></AccordionElement>

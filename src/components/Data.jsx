@@ -3,8 +3,8 @@ import React from 'react'
 const DataPiece = ({number, info}) =>(
 
     <div className='flex flex-col'>
-        <p className='font-semibold text-[3.5em] text-transparent bg-clip-text bg-gradient-to-r from-[#5266cb] to-[#0a1482] to-[80%] text-center'>{number}</p>
-        <p className='text-[#3b3b3b] text-[20px] text-center'>{info}</p>
+        <p className='font-semibold text-[1.85em] xl:text-[3em] 2xl:text-[3.5em] text-transparent bg-clip-text bg-gradient-to-r from-[#5266cb] to-[#0a1482] to-[80%] text-center'>{number}</p>
+        <p className='text-[#3b3b3b] text-[15px] xl:text-[18px] 2xl:text-[20px] text-center'>{info}</p>
     </div>
 
 )
