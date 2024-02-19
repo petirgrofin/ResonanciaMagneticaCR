@@ -33,7 +33,7 @@ const Footer = () => (
 
       <hr className='w-[45%] mt-12 border-[#28313D]' />
 
-      <p className='mt-12 font-poppins text-[12px] text-white'>&copy; 2023 Centros de Resonancia Magnética. Todos los derechos reservados.</p>
+      <p className='mt-12 font-poppins text-[12px] text-white'>&copy; 2024 Centros de Resonancia Magnética. Todos los derechos reservados.</p>
       <img src={logotransparent} alt="" className='mb-8 mt-8 w-[320px]'/>
 
 

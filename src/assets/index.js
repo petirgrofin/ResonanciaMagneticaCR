@@ -14,6 +14,14 @@ import location from "./location.png";
 import schedule from "./schedule.png";
 import INS from "./INS.png";
 import LHS from "./LHS.png";
+import Arquitectos from "./ColegioArquitectos.png";
+import Cirujanos from "./ColegioCirujanos.png";
+import Adisa from "./Adisa.png";
+import EstablishmentLabs from "./EstablishmentLabs.png";
+import BlueMedical from "./BlueMedical.png";
+import BMI from "./BMI.png";
+import Novartis from "./Novartis.png";
+import Stein from "./Stein.png";
 import Catolica from "./Catolica.png";
 import PanAmericanLife from "./PanAmericanLife.png";
 import Redbridge from "./Redbridge.png";
@@ -37,6 +45,11 @@ import logotransparent from "./logo-transparent.png";
 import resonador_about from "./resonador_about.jpg";
 import mission from "./Mission.webp";
 import vision from "./vision.avif"
+import original_resonator from "./resonador_original.jpg"
+import original_resonator2 from "./resonador_original2.jpg"
+import schedule_icon from "./timetable.png"
+import medkit from "./medkit.png"
+import radiation from "./radiation.png"
 
 export {logo};
 export {resonancia_imagen};
@@ -77,3 +90,16 @@ export {logotransparent};
 export {resonador_about};
 export {mission};
 export {vision};
+export {original_resonator};
+export {original_resonator2};
+export {schedule_icon};
+export {medkit};
+export {Arquitectos};
+export {Cirujanos};
+export {Adisa};
+export {EstablishmentLabs};
+export {BlueMedical};
+export {BMI};
+export {Novartis};
+export {Stein};
+export {radiation};

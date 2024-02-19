@@ -11,5 +11,9 @@ import MRIExplanation from "./MRIExplanation";
 import Data from "./Data";
 import Benefits from "./Benefits";
 import FAQ from "./FAQ";
+import MRICanvas from "./MRICanvas"
+import MRITypes from "./MRITypes"
+import BenefitsGrid from "./BenefitsGrid";
+import Form from "./Form";
 
-export {Hero, Navbar, MRI, Separator, Contact, Offers, Footer, Trust, Types, MRIExplanation, Data, Benefits, FAQ};
+export {Hero, Navbar, MRI, Separator, Contact, Offers, Footer, Trust, Types, MRIExplanation, Data, Benefits, FAQ, MRICanvas, MRITypes, BenefitsGrid, Form};

@@ -27,7 +27,7 @@ const NavbarLink = {
 }
 
 let links = [
-    NavbarLink.create("Acerca de nosotros", [DropdownLink.create("Nuestras sedes", "index.html#contact")], "acerca-de.html"),
+    NavbarLink.create("Acerca de nosotros", [DropdownLink.create("Nuestras sedes", "index.html#contact")], "about.html"),
     NavbarLink.create("Servicios", [DropdownLink.create("Procedimiento", "#"), DropdownLink.create("Nuestra práctica", "#")], "index.html#services"),
     NavbarLink.create("Contáctenos", [], "index.html#contact"),
     NavbarLink.create("Preguntas frecuentes", [], "index.html#faq"),

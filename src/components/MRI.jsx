@@ -24,7 +24,7 @@ const MRI = () => (
             <h2 className='mb-12 text-black font-semibold font-poppins text-[2.5em] xl:text-[3.5em]'>Todo tipo de resonancias magnéticas</h2>
         </div>
 
-        <div className="flex flex-row items-center justify-center gap-12 max-w-[1600px] flex-wrap">
+        <div className="flex flex-row items-center justify-center gap-16 max-w-[1600px] flex-wrap">
             <Service img_src={Cerebral} title={"Cerebro"}></Service>
             <Service img_src={MusculoEsqueletico} title={"Músculo-Esquelético"}></Service>
             <Service img_src={Torax} title={"Tórax"}></Service>

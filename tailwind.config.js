@@ -20,6 +20,9 @@ export default {
         poppins: ["Poppins", "sans-serif"],
         bebas: ["Bebas Neue", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
+        lato: ["Lato", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"]
       },
     },
   },
