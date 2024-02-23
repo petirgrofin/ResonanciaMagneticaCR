@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import {useState, useEffect} from 'react';
 import {Hero, Navbar, MRI, Contact, Footer, Trust, MRIExplanation, Data, Benefits, FAQ, MRICanvas, MRITypes, BenefitsGrid, Form} from "./components";
 
@@ -60,7 +60,7 @@ const App = () => {
 
             {/*<div className='aspect-[960/100] w-full bg-no-repeat bg-center bg-cover bg-[url("src/assets/wave-haikei.svg")]'></div>*/}
 
-            <section id='services' className=''>
+            <section id='services' className='mt-36'>
                 <MRITypes></MRITypes>
             </section>
 
@@ -70,10 +70,6 @@ const App = () => {
 
             <section id='faq' className='mt-36'>
                 <FAQ></FAQ>
-            </section>
-
-            <section>
-                <Form></Form>
             </section>
 
             <section className='mt-36'>

@@ -1,7 +1,7 @@
 import {links, studies_link} from "../constants";
 import {logo} from "../assets";
 import {HoverLink} from "../styles";
-import { useState, useEffect } from "react";
+import {useState} from "react";
 
 function getLinkStyle(index){
 
@@ -36,7 +36,7 @@ const Navbar = ({background_visible_always = false, scrolled}) => {
     const [isBackgroundVisible, setBackgroundVisibility] = useState(background_visible_always);
 
     return (
-        <nav id="navbar" className={`${isBackgroundVisible || scrolled || background_visible_always ? "bg-[#f5f5f5] fixed" : "absolute"} hidden w-full z-[2] lg:flex flex-col transition-all duration-[500ms]`} onMouseEnter={() => setBackgroundVisibility(true)} onMouseLeave={() => setBackgroundVisibility(background_visible_always)}>
+        <nav id="navbar" className={`${isBackgroundVisible || scrolled || background_visible_always ? "bg-[#efefef] fixed" : "absolute"} hidden w-full z-[3] lg:flex flex-col transition-all duration-[500ms]`} onMouseEnter={() => setBackgroundVisibility(true)} onMouseLeave={() => setBackgroundVisibility(background_visible_always)}>
             
             <div className={`w-full bg-[#3642af] p-2 flex justify-center items-center ${adVisibility ? "": "hidden"}`}>
                 <p className='font-poppins text-center m-auto text-white text-[13px] xl:text-[15px]'>Promoción: 50% de descuento en <span className='font-bold'>todos</span> los servicios de resonancia magnética</p>

@@ -123,7 +123,7 @@ const Trust = () =>{
         <a href='../../about.html' className={`${AltCTAStyle} block mx-auto`}>Acerca de nosotros</a>
         <div className='flex flex-row'>
           <div className='bg-gradient-to-r from-[#F7F7F7] to-[#F7F7F700] w-[30px] h-[180px] absolute z-[2]'></div>
-          <div className='mt-8 flex flex-row justify-center items-center gap-8 overflow-x-hidden max-w-4xl'>
+          <div className='mt-8 flex flex-row justify-center items-center gap-16 overflow-x-hidden max-w-4xl'>
             <img className='company object-scale-down w-[120px] h-[100px] 2xl:w-[150px] 2xl:h-[120px]' src={BMI} alt="" />
             <img className='company object-scale-down w-[120px] h-[100px] 2xl:w-[150px] 2xl:h-[120px]' src={EstablishmentLabs} alt="" />
             <img className='company object-scale-down w-[120px] h-[100px] 2xl:w-[150px] 2xl:h-[140px]' src={INS} alt="" />

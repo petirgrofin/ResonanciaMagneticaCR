@@ -50,6 +50,7 @@ import original_resonator2 from "./resonador_original2.jpg"
 import schedule_icon from "./timetable.png"
 import medkit from "./medkit.png"
 import radiation from "./radiation.png"
+import brain_gif from "./braingif.gif"
 
 export {logo};
 export {resonancia_imagen};
@@ -103,3 +104,4 @@ export {BMI};
 export {Novartis};
 export {Stein};
 export {radiation};
+export {brain_gif};

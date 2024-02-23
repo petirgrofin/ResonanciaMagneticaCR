@@ -8,7 +8,7 @@ const Hero = () => (
 
         <div className="relative w-full h-full bg-black/[0.7] hover:bg-black/[0.6] transition-all duration-1000">
             <img src={resonancia_imagen} alt="resonador" className="brightness-[0.5] hover:brightness-[0.7] transition-all duration-1000 w-full hidden"/>
-            <div className="absolute lg:top-[25%] xl:top-[22%] 2xl:top-[17%] left-[10%] transition-all duration-1000 w-[57%] xl:w-[47%] 2xl:w-[45%]">
+            <div className="absolute lg:top-[25%] xl:top-[22%] 2xl:top-[14%] left-[10%] transition-all duration-1000 w-[57%] xl:w-[47%] 2xl:w-[45%]">
                 <h1 className="text-white font-regular text-[3em] xl:text-[3.8em] 2xl:text-[5em] font-montserrat w-fit">
                     A su servicio <br /> <span className="font-[900]">desde 1994</span>
                 </h1>

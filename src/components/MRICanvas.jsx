@@ -9,11 +9,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 let images = [];
 
-const frameCount = 100;
+const frameCount = 70;
 
 for (let i = 0; i < frameCount; i++){
     const img = new Image();
-    img.src = `/src/assets/LateralRM/jpeg/${i}.jpeg`
+    img.src = `/LateralRM/jpeg/${i}.jpeg`
     images.push(img)
 }
 
@@ -48,7 +48,7 @@ const MRICanvas = () => {
           trigger: ".canvas-container",
           start: "center center",
           pin: true, // Fun fact: gsap pins the container by wrapping the container in a div and augmenting the padding
-          end: "+=900", // control duration with this
+          end: "+=500", // control duration with this
           scrub: 0.5
       },
       onUpdate: render})
@@ -56,7 +56,7 @@ const MRICanvas = () => {
   );
 
   return (
-    <div ref={container} className='h-[1000px] canvas-container flex justify-center items-center bg-[#03001F] to-[55%] gap-16'>
+    <div ref={container} className='h-[1000px] canvas-container flex justify-center items-center bg-[#06104D] gap-16'>
       <div className='flex flex-col max-w-[700px] gap-4'>
         <h2 className='font-poppins font-bold text-white text-[3.5em]'>Tecnología de última generación</h2>
         <p className='font-poppins text-white text-[18px] w-[90%]'>Contamos con equipos de resonancia magnética que producen la mejor calidad y resolución de imagen, así como con un servidor de imágenes de Apple accesible para el cliente que permite la visualización inmediata de los examenes</p>
