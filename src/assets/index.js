@@ -51,7 +51,40 @@ import schedule_icon from "./timetable.png"
 import medkit from "./medkit.png"
 import radiation from "./radiation.png"
 import brain_gif from "./braingif.gif"
+import menu from "./burger-bar.png"
+import MRIImage from "./MRIImages.jpg"
+import HaikeiHero from "./HaikeiHero.svg";
+import ResonanciaOriginal1 from "./ResonanciaOriginal1.jpg";
+import ResonanciaOriginal2 from "./ResonanciaOriginal2.jpg";
+import ResonanciaOriginal3 from "./ResonanciaOriginal3.jpg";
+import ResonanciaOriginal4 from "./ResonanciaOriginal4.jpg";
+import ResonanciaOriginal5 from "./ResonanciaOriginal5.jpg";
+import ResonanciaOriginal6 from "./ResonanciaOriginal6.jpg";
+import ResonanciaOriginal7 from "./ResonanciaOriginal7.jpg";
+import ResonanciaOriginal8 from "./ResonanciaOriginal8.jpg";
+import cerebro from "./cerebro.png";
+import hombro from "./hombro.png";
+import rodilla from "./rodilla.png";
+import columna from "./columna.png";
+import flexible from "./flexible.svg";
+import full from "./full.svg";
+import informative from "./informative.svg";
+import adaptable from "./adaptable.svg";
+import precise from "./precise.svg";
+import quality from "./quality.svg";
+import safe from "./safe.svg";
+import withoutSecondaryEffects from "./withoutSecondaryEffects.svg"
+import close from "./close.png";
 
+export {close};
+export {flexible};
+export {full};
+export {informative};
+export {adaptable};
+export {precise};
+export {quality};
+export {safe};
+export {withoutSecondaryEffects};
 export {logo};
 export {resonancia_imagen};
 export {resonancia_imagen2};
@@ -105,3 +138,18 @@ export {Novartis};
 export {Stein};
 export {radiation};
 export {brain_gif};
+export {menu};
+export {MRIImage};
+export {HaikeiHero};
+export {ResonanciaOriginal1};
+export {ResonanciaOriginal2};
+export {ResonanciaOriginal3};
+export {ResonanciaOriginal4};
+export {ResonanciaOriginal5};
+export {ResonanciaOriginal6};
+export {ResonanciaOriginal7};
+export {ResonanciaOriginal8};
+export {cerebro};
+export {hombro};
+export {rodilla};
+export {columna};

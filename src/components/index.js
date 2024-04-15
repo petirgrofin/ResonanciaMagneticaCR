@@ -15,5 +15,7 @@ import MRICanvas from "./MRICanvas"
 import MRITypes from "./MRITypes"
 import BenefitsGrid from "./BenefitsGrid";
 import Form from "./Form";
+import FinishingRemark from "./FinishingRemark";
+import AltHeroMRI from "./AltHeroMRI";
 
-export {Hero, Navbar, MRI, Separator, Contact, Offers, Footer, Trust, Types, MRIExplanation, Data, Benefits, FAQ, MRICanvas, MRITypes, BenefitsGrid, Form};
+export {AltHeroMRI, Hero, Navbar, MRI, Separator, Contact, Offers, Footer, Trust, Types, MRIExplanation, Data, Benefits, FAQ, MRICanvas, MRITypes, BenefitsGrid, Form, FinishingRemark};

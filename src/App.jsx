@@ -1,78 +1,55 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
-import {Hero, Navbar, MRI, Contact, Footer, Trust, MRIExplanation, Data, Benefits, FAQ, MRICanvas, MRITypes, BenefitsGrid, Form} from "./components";
+import {Hero, Navbar, MRI, Contact, Footer, Trust, MRIExplanation, Data, Benefits, FAQ, MRICanvas, MRITypes, BenefitsGrid, Form, FinishingRemark, AltHeroMRI} from "./components";
 
 const App = () => {
-
-    let is_navbar_background_always_visible = false
-    const [scrolled, setScrolled] = useState(false);
-
-    const updateNavbarBackground = () => {
-        if (window !== undefined){
-            let windowHeight = window.scrollY;
-            if (windowHeight > 600 && windowHeight || is_navbar_background_always_visible){
-                setScrolled(true);
-            }
-            else{
-                setScrolled(false);
-            }
-
-        }
-    };
-
-    useEffect(() => {
-        window.addEventListener('scroll', updateNavbarBackground);
-        return () => {
-            window.removeEventListener('scroll', updateNavbarBackground);
-        }
-    }, []);
     
     return (
-        <div className='w-full bg-[#F7F7F7]'>
+        <div className='w-full bg-[#fafafa]'>
 
             <div className="w-full">
-                <Navbar scrolled={scrolled}></Navbar>
+                <Navbar background_visible_always={false}></Navbar>
             </div>
-            
-            <section id='hero-section'>
-                <Hero></Hero>
+
+            <section className=''>
+                <MRICanvas></MRICanvas>
             </section>
 
-            <section id='trust' className='mt-24'>
+            <section id='trust' className='mt-32 lg:mt-48'>
                 <Trust></Trust>
             </section>
 
-            <section className='mt-24'>
+            <section className='mt-32 lg:mt-48'>
                 <Data></Data>
             </section>
 
-            <section className='mt-36'>
-                <MRIExplanation></MRIExplanation>
+            <section id='services' className='mt-32 lg:mt-48'>
+                <MRITypes></MRITypes>
             </section>
 
-            <section className='mt-36'>
+            <section className='mt-32 lg:mt-48'>
                 <BenefitsGrid></BenefitsGrid>
             </section>
 
-            <section className='mt-36'>
-                <MRICanvas></MRICanvas>
+            <section className='mt-32 lg:mt-48'>
+                <MRIExplanation></MRIExplanation>
             </section>
 
             {/*<div className='aspect-[960/100] w-full bg-no-repeat bg-center bg-cover bg-[url("src/assets/wave-haikei.svg")]'></div>*/}
 
-            <section id='services' className='mt-36'>
-                <MRITypes></MRITypes>
-            </section>
-
-            <section id='contact' className='mt-36'>
+            <section id='contact' className='mt-32 lg:mt-48'>
                 <Contact></Contact>
             </section>
 
-            <section id='faq' className='mt-36'>
+            <section id='faq' className='mt-32 lg:mt-48'>
                 <FAQ></FAQ>
             </section>
 
-            <section className='mt-36'>
+            <section id='finishing_remarks' className='mt-32 lg:mt-48'>
+                <FinishingRemark></FinishingRemark>
+            </section>
+
+            <section className=''>
                 <Footer></Footer>
             </section>
 

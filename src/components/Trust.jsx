@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useRef, useEffect} from 'react'
 import { CTAStyle, AltCTAStyle } from '../styles'
 import { INS, LHS, Catolica, Redbridge, PanAmericanLife, Arquitectos, Cirujanos, Adisa, EstablishmentLabs, BlueMedical, BMI, Novartis, Stein} from '../assets'
 import { useGSAP } from "@gsap/react"
 import { gsap } from 'gsap'
 
+let companies = [BMI, EstablishmentLabs, INS, LHS, Catolica, Redbridge, Arquitectos, Cirujanos, Adisa, BlueMedical, Novartis, Stein]
+
 function horizontalLoop(items, config) {
+
+    console.log(config);
     
     items = gsap.utils.toArray(items);
     config = config || {};
@@ -107,40 +111,31 @@ function horizontalLoop(items, config) {
     return tl;
 }
 
-
 const Trust = () =>{
 
-    useGSAP(() => {
-        const companies = gsap.utils.toArray(".company");
-        horizontalLoop(companies, {speed: 0.5, repeat: true})
-    })
+  const container = useRef();
 
-    return (
-    <div className='flex flex-col gap-8 justify-center items-center'>
-        <p className='mb-[-10px] font-bold text-[#527bec] text-center text-[1.3em] uppercase'>¿Por qué elegirnos?</p>
-        <h2 className='font-semibold text-black font-poppins text-center text-[2em] xl:text-[2.5em] 2xl:text-[2.8em]'>Consulte a su médico. Somos la empresa líder en <br/> resonancias magnéticas con el <span className='underline underline-offset-4 decoration-[#527bec]'>mejor precio del mercado</span></h2>
-        <p className='font-poppins text-center text-[17px] xl:text-[1.3em] 2xl:text-[1.4em] leading-[1.8em]'>Nuestro personal calificado ha servido a miles de clientes de manera satisfactoria y eficiente desde <span className='font-bold'>1994</span>. <br />Conozca más acerca de nuestra práctica y personal.</p>
-        <a href='../../about.html' className={`${AltCTAStyle} block mx-auto`}>Acerca de nosotros</a>
-        <div className='flex flex-row'>
-          <div className='bg-gradient-to-r from-[#F7F7F7] to-[#F7F7F700] w-[30px] h-[180px] absolute z-[2]'></div>
-          <div className='mt-8 flex flex-row justify-center items-center gap-16 overflow-x-hidden max-w-4xl'>
-            <img className='company object-scale-down w-[120px] h-[100px] 2xl:w-[150px] 2xl:h-[120px]' src={BMI} alt="" />
-            <img className='company object-scale-down w-[120px] h-[100px] 2xl:w-[150px] 2xl:h-[120px]' src={EstablishmentLabs} alt="" />
-            <img className='company object-scale-down w-[120px] h-[100px] 2xl:w-[150px] 2xl:h-[140px]' src={INS} alt="" />
-            <img className='company object-scale-down w-[120px] h-[100px] 2xl:w-[150px] 2xl:h-[120px]' src={Catolica} alt="" />
-            <img className='company object-scale-down w-[120px] h-[100px] 2xl:w-[150px] 2xl:h-[120px]' src={LHS} alt="" />
-            <img className='company object-scale-down w-[120px] h-[100px] 2xl:w-[150px] 2xl:h-[120px]' src={Redbridge} alt="" />
-            <img className='company object-scale-down w-[120px] h-[100px] 2xl:w-[150px] 2xl:h-[120px]' src={Adisa} alt="" />
-            <img className='company object-scale-down w-[120px] h-[100px] 2xl:w-[150px] 2xl:h-[120px]' src={Arquitectos} alt="" />
-            <img className='company object-scale-down w-[120px] h-[100px] 2xl:w-[150px] 2xl:h-[120px]' src={Cirujanos} alt="" />
-            <img className='company object-scale-down w-[120px] h-[100px] 2xl:w-[150px] 2xl:h-[120px]' src={BlueMedical} alt="" />
-            <img className='company object-scale-down w-[120px] h-[100px] 2xl:w-[150px] 2xl:h-[120px]' src={Novartis} alt="" />
-            <img className='company object-scale-down w-[120px] h-[100px] 2xl:w-[150px] 2xl:h-[120px]' src={Stein} alt="" />
-          </div>
-          <div className='bg-gradient-to-l from-[#F7F7F7] to-[#F7F7F700] w-[30px] h-[180px] absolute right-[31em] z-[2]'></div>
+  useGSAP(() => {
+      console.log("running trust animation")
+      const companiesHtml = gsap.utils.toArray(".company");
+      horizontalLoop(companiesHtml, {speed: 0.1})
+  }, {scope: container})
+
+  return (
+  <div className='ml-4 mr-4 xs:ml-8 xs:mr-8 flex flex-col gap-8 justify-center items-center'>
+      <p className='font-poppins mb-[-10px] font-bold text-[#2D5CFD] text-center text-[1.2em] uppercase'>¿Por qué elegirnos?</p>
+      <h2 className='font-semibold font-jakarta text-center ml-4 mr-4 lg:m-0 text-[2em] xl:text-[2.5em] 2xl:text-[3em]'>Consulte a su médico. Somos la empresa líder en <br className='lg:block hidden'/> resonancias magnéticas con el <span className='underline underline-offset-4 decoration-[#2D5CFD]'>mejor precio del mercado</span></h2>
+      <p className='font-jakarta text-center ml-4 mr-4 lg:m-0 sm:text-[18px] xl:text-[1.3em] 2xl:text-[22px] leading-[2em]'>Nuestro personal calificado ha servido a miles de clientes de manera satisfactoria y eficiente desde <span className='font-bold'>1994</span>. <br />Conozca más acerca de nuestra práctica y personal.</p>
+      <a href='about.html' className={`${AltCTAStyle} block mx-auto`}>Acerca de nosotros</a>
+      <div className='flex flex-row overflow-x-hidden'>
+        <div className='bg-gradient-to-r from-[#FAFAFA] to-[#FAFAFA00] w-[30px] h-[180px] absolute z-[2]'></div>
+        <div ref={container} className='mt-8 flex flex-row justify-center items-center gap-16 overflow-x-hidden max-w-[300px] sm:max-w-4xl'>
+          {companies.map((company, index) => <img key={index} className='company object-scale-down w-[120px] h-[100px] 2xl:w-[150px] 2xl:h-[120px]' src={company}></img>)}
         </div>
-    </div>
-    )
+        <div className='bg-gradient-to-l from-[#FAFAFA] to-[#FAFAFA00] w-[30px] h-[180px] absolute right-[31em] z-[2]'></div>
+      </div>
+  </div>
+  )
 
 }
 

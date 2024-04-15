@@ -1,7 +1,15 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}', './node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'],
   theme: {
+
+    screens:{
+      'xs': '375px',
+      ...defaultTheme.screens,
+    },
 
     extend: {
 
@@ -22,12 +30,14 @@ export default {
         montserrat: ["Montserrat", "sans-serif"],
         inter: ["Inter", "sans-serif"],
         lato: ["Lato", "sans-serif"],
-        roboto: ["Roboto", "sans-serif"]
+        roboto: ["Roboto", "sans-serif"],
+        jakarta: ["Plus Jakarta Sans", "sans-serif"],
+        helvetica: ["Helvetica", "sans-serif"],
+        manrope: ["Manrope", "sans-serif"],
+        figtree: ["Figtree", "sans-serif"],
+        raleway: ["Raleway", "sans-serif"]
       },
     },
-  },
-  plugins: [
-    require('flowbite/plugin')
-  ],
+  }
 }
 
